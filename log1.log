@@ -1,0 +1,30 @@
+2026-03-29 10:00:01 INFO  Starting application
+2026-03-29 10:00:02 INFO  Loading configuration
+2026-03-29 10:00:03 WARN  Config file missing optional field
+2026-03-29 10:00:04 INFO  Connecting to database
+2026-03-29 10:00:05 ERROR Failed to connect to database
+2026-03-29 10:00:06 INFO  Retrying connection
+2026-03-29 10:00:07 WARN  Slow response from database
+2026-03-29 10:00:08 INFO  Connection established
+2026-03-29 10:00:09 INFO  Starting HTTP server
+2026-03-29 10:00:10 ERROR Failed to bind port
+2026-03-29 10:00:11 INFO  Switching to fallback port
+2026-03-29 10:00:12 INFO  Server started successfully
+2026-03-29 10:00:13 DEBUG Debugging startup sequence
+2026-03-29 10:00:14 INFO  Received request /home
+2026-03-29 10:00:15 INFO  Processed request /home
+2026-03-29 10:00:16 WARN  High memory usage detected
+2026-03-29 10:00:17 INFO  Received request /login
+2026-03-29 10:00:18 ERROR Database timeout on login
+2026-03-29 10:00:19 INFO  Retrying login request
+2026-03-29 10:00:20 INFO  Login successful
+2026-03-29 10:00:21 INFO  Received request /dashboard
+2026-03-29 10:00:22 INFO  Processed request /dashboard
+2026-03-29 10:00:23 WARN  Disk usage at 85%
+2026-03-29 10:00:24 INFO  Background job started
+2026-03-29 10:00:25 ERROR Failed to process background job
+2026-03-29 10:00:26 INFO  Background job retry scheduled
+2026-03-29 10:00:27 INFO  System running normally
+
+This is a random line without log level
+Another malformed entry here
