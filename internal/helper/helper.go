@@ -46,3 +46,35 @@ func ParseFile(fileName string) (Count, error) {
 	return count, nil
 
 }
+
+func PrintSummary(count Count) {
+
+	fmt.Println("Filename ", count.FileName)
+	fmt.Println("Number of Lines ", count.NumLines)
+	fmt.Println("Info ", count.NumInfo)
+	fmt.Println("Warn ", count.NumWarn)
+	fmt.Println("Error ", count.NumErr)
+	fmt.Println("Debug ", count.NumDebug)
+	fmt.Println("Unknown ", count.UnknownLines)
+
+}
+
+func UpdateTotalCount(totalCount *TotalCount, count Count) {
+	totalCount.TotalNumInfo += count.NumInfo
+	totalCount.TotalNumWarn += count.NumWarn
+	totalCount.TotalNumErr += count.NumErr
+	totalCount.TotalNumDebug += count.NumDebug
+	totalCount.TotalNumLines += count.NumLines
+	totalCount.TotalUnknownLines += count.UnknownLines
+}
+
+func PrintTotalSummary(totalCount *TotalCount) {
+
+	fmt.Println("Total Number Of  Lines ", totalCount.TotalNumLines)
+	fmt.Println("Total Info Count", totalCount.TotalNumInfo)
+	fmt.Println("Total Warn Count", totalCount.TotalNumWarn)
+	fmt.Println("Total Error Count", totalCount.TotalNumErr)
+	fmt.Println("Total Debug Count", totalCount.TotalNumDebug)
+	fmt.Println("Total Unknown Count", totalCount.TotalUnknownLines)
+
+}
